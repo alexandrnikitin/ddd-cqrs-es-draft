@@ -6,6 +6,7 @@ using Microsoft.WindowsAzure;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Table;
 
+using Octo.Core.Configuration;
 using Octo.Core.Cqrs;
 using Octo.Core.Cqrs.Common;
 using Octo.Core.EventSourcing;
@@ -18,7 +19,7 @@ namespace Octo.Azure.EventSourcing.TableStorage
 
         static AzureTableStorageEventStore()
         {
-            var storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting(ConfigurationConstants.StorageConnectionString));
+            var storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting(Constants.StorageConnectionString));
             var tableClient = storageAccount.CreateCloudTableClient();
             var tableName = typeof(TAggregateRoot).Name;
             var table = tableClient.GetTableReference(tableName);
@@ -27,7 +28,7 @@ namespace Octo.Azure.EventSourcing.TableStorage
 
         public AzureTableStorageEventStore()
         {
-            var storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting(ConfigurationConstants.StorageConnectionString));
+            var storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting(Constants.StorageConnectionString));
             var tableClient = storageAccount.CreateCloudTableClient();
             var tableName = typeof(TAggregateRoot).Name;
             _table = tableClient.GetTableReference(tableName);

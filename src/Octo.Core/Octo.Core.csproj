@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\Constants.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Cqrs\Common\CommittableEvent.cs" />
     <Compile Include="Cqrs\ICommittableEvent.cs" />
