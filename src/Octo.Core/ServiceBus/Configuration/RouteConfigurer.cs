@@ -1,5 +1,7 @@
 ﻿using System;
 
+using Autofac;
+
 using Octo.Core.ServiceBus.Configuration.Routing;
 using Octo.Core.ServiceBus.MessageBrokers;
 

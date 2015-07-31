@@ -1,4 +1,10 @@
-﻿using Octo.Core.ServiceBus.Chains.Publish;
+﻿using Autofac;
+
+using Microsoft.ServiceBus;
+using Microsoft.ServiceBus.Messaging;
+
+using Octo.Core.Patterns.ChainOfHandlers.HandlingStrategies;
+using Octo.Core.ServiceBus.Chains.Publish;
 using Octo.Core.ServiceBus.Chains.Receive;
 using Octo.Core.ServiceBus.Common;
 using Octo.Core.ServiceBus.Configuration;

@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 
+using Octo.Core.Patterns.ChainOfHandlers;
+using Octo.Core.Patterns.ChainOfHandlers.Interfaces;
 using Octo.Core.ServiceBus.Chains.Receive;
 
 namespace Octo.Core.ServiceBus.MessageBrokers.Memory.Chains.Receive

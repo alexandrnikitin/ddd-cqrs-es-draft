@@ -6,13 +6,6 @@ namespace Octo.Core.ServiceBus.MessageBrokers.Memory.Chains.Receive.Handlers
 {
     internal class HandleMessage : IReceiveMessageHandler
     {
-        private readonly ILogger _logger;
-
-        public HandleMessage(ILogger logger)
-        {
-            _logger = logger;
-        }
-
         public void Handle(ReceiveMessageContext context)
         {
             IMessageEnvelop messageEnvelop;
@@ -29,8 +22,8 @@ namespace Octo.Core.ServiceBus.MessageBrokers.Memory.Chains.Receive.Handlers
                 }
                 catch (Exception exception)
                 {
-                    _logger.Error("Error handling message:");
-                    _logger.Error(exception);
+                    //_logger.Error("Error handling message:");
+                    //_logger.Error(exception);
                 }
             }
         }

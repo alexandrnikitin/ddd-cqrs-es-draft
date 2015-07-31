@@ -1,4 +1,6 @@
-﻿namespace Octo.Core.ServiceBus.Configuration
+﻿using Autofac;
+
+namespace Octo.Core.ServiceBus.Configuration
 {
     public abstract class BaseConfigurer
     {

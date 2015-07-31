@@ -1,5 +1,8 @@
 using System;
 
+using Autofac;
+
+using Octo.Core.Patterns.ChainOfHandlers.HandlingStrategies;
 using Octo.Core.ServiceBus.Chains.Publish;
 using Octo.Core.ServiceBus.Chains.Publish.Handlers;
 using Octo.Core.ServiceBus.Chains.Receive;

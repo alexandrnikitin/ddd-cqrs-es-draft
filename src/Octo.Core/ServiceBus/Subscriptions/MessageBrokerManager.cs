@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 
+using Autofac;
+
 using Octo.Core.ServiceBus.Common;
 using Octo.Core.ServiceBus.Configuration;
 using Octo.Core.ServiceBus.MessageBrokers;

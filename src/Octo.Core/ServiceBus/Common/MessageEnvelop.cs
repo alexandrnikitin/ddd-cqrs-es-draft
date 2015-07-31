@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
+using Microsoft.ServiceBus.Messaging;
+
 namespace Octo.Core.ServiceBus.Common
 {
     [Serializable]

@@ -1,5 +1,8 @@
 ﻿using System.Collections.Generic;
 
+using Octo.Core.Patterns.ChainOfHandlers;
+using Octo.Core.Patterns.ChainOfHandlers.Interfaces;
+
 namespace Octo.Core.ServiceBus.Chains.Receive
 {
     internal class ReceiveMessageChain

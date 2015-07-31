@@ -1,4 +1,5 @@
-﻿using Octo.Core.ServiceBus.Common;
+﻿using Octo.Core.Patterns.ChainOfHandlers.Interfaces;
+using Octo.Core.ServiceBus.Common;
 
 namespace Octo.Core.ServiceBus.Chains.Send
 {

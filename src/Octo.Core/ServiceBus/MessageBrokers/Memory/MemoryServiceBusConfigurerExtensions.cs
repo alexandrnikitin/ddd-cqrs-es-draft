@@ -1,3 +1,6 @@
+using Autofac;
+
+using Octo.Core.Patterns.ChainOfHandlers.HandlingStrategies;
 using Octo.Core.ServiceBus.Chains.Receive;
 using Octo.Core.ServiceBus.Configuration;
 using Octo.Core.ServiceBus.MessageBrokers.Memory.Chains.Receive;

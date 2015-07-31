@@ -5,8 +5,6 @@ namespace Octo.Core.ServiceBus.Worker
 {
     public class Worker
     {
-        private readonly ILogger _logger;
-
         private readonly IServiceBus _serviceBus;
 
         private readonly Thread _workerThread;
@@ -14,10 +12,9 @@ namespace Octo.Core.ServiceBus.Worker
         private volatile bool _shouldExit;
         private volatile bool _shouldWork;
 
-        public Worker(IServiceBus serviceBus, ILogger logger)
+        public Worker(IServiceBus serviceBus)
         {
             _serviceBus = serviceBus;
-            _logger = logger;
 
             _workerThread = new Thread(MainLoop);
             _workerThread.Start();
@@ -62,8 +59,8 @@ namespace Octo.Core.ServiceBus.Worker
             }
             catch (Exception exception)
             {
-                _logger.Error("Error receiving message");
-                _logger.Error(exception);
+                //_logger.Error("Error receiving message");
+                //_logger.Error(exception);
             }
         }
     }

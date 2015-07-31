@@ -1,4 +1,6 @@
-﻿namespace Octo.Core.ServiceBus.MessageBrokers.AzureServiceBus
+﻿using Microsoft.ServiceBus.Messaging;
+
+namespace Octo.Core.ServiceBus.MessageBrokers.AzureServiceBus
 {
     public class AzureServiceBusTopicClientWrapper
     {

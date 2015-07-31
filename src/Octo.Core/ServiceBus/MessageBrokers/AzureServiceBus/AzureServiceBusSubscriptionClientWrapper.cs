@@ -1,3 +1,5 @@
+using Microsoft.ServiceBus.Messaging;
+
 namespace Octo.Core.ServiceBus.MessageBrokers.AzureServiceBus
 {
     public class AzureServiceBusSubscriptionClientWrapper
