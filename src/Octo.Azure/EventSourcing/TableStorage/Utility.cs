@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Text;
 
-namespace Octo.Core.EventSourcing.AzureTableStorage
+namespace Octo.Azure.EventSourcing.TableStorage
 {
     public static class Utility
     {

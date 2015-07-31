@@ -3,7 +3,7 @@ using System.Globalization;
 
 using Octo.Core.Cqrs;
 
-namespace Octo.Core.EventSourcing.AzureTableStorage
+namespace Octo.Azure.EventSourcing.TableStorage
 {
     public class EventTableEntity : TableEntity
     {

@@ -39,8 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventSourcing\TableStorage\AzureTableStorageEventStore.cs" />
+    <Compile Include="EventSourcing\TableStorage\EventTableEntity.cs" />
+    <Compile Include="EventSourcing\TableStorage\Utility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Octo.Core\Octo.Core.csproj">
+      <Project>{8c6bc530-9d8e-42fe-99c7-f5d73a863e25}</Project>
+      <Name>Octo.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

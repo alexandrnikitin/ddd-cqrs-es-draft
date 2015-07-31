@@ -4,8 +4,9 @@ using System.Linq;
 
 using Octo.Core.Cqrs;
 using Octo.Core.Cqrs.Common;
+using Octo.Core.EventSourcing;
 
-namespace Octo.Core.EventSourcing.AzureTableStorage
+namespace Octo.Azure.EventSourcing.TableStorage
 {
     public class AzureTableStorageEventStore<TAggregateRoot> : IEventStore<TAggregateRoot>
     {
