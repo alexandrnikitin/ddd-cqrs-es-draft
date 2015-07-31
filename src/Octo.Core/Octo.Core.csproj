@@ -143,8 +143,21 @@
     <Compile Include="ServiceBus\Subscriptions\MessageTypeToPublisherDictionary.cs" />
     <Compile Include="ServiceBus\Worker\Worker.cs" />
     <Compile Include="ServiceBus\Worker\WorkerManager.cs" />
+    <Compile Include="Patterns\ChainOfHandlers\ChainOfHandlersModule.cs" />
+    <Compile Include="Patterns\ChainOfHandlers\HandlingStrategies\ReturnManyStrategy.cs" />
+    <Compile Include="Patterns\ChainOfHandlers\HandlingStrategies\ReturnNonNullStrategy.cs" />
+    <Compile Include="Patterns\ChainOfHandlers\HandlingStrategies\ReturnWhenFalseStrategy.cs" />
+    <Compile Include="Patterns\ChainOfHandlers\HandlingStrategies\ReturnWhenTrueStrategy.cs" />
+    <Compile Include="Patterns\ChainOfHandlers\HandlingStrategies\AllHandlingStrategy.cs" />
+    <Compile Include="Patterns\ChainOfHandlers\Interfaces\IHandler.cs" />
+    <Compile Include="Patterns\ChainOfHandlers\Interfaces\IHandlingStrategy.cs" />
+    <Compile Include="Patterns\ChainOfHandlers\Interfaces\IHandlingWithResponseStrategy.cs" />
+    <Compile Include="Patterns\ChainOfHandlers\ChainOfHandlers.cs" />
+    <Compile Include="Patterns\ChainOfHandlers\ChainOfHandlersWithResponse.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
