@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Octo.Azure", "src\Octo.Azur
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{C728D540-4B7F-42CA-9EC6-C55C0A4215AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushNotifications", "PushNotifications\PushNotifications.csproj", "{D8B933A3-9CDF-4733-B377-59DE2C2B191A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushNotifications", "samples\PushNotifications\PushNotifications.csproj", "{D8B933A3-9CDF-4733-B377-59DE2C2B191A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

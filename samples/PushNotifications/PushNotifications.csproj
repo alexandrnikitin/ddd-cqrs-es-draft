@@ -39,7 +39,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Sagas\PaymentReceivedEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Domain\AggregateRoots\PushNotification.cs" />
+    <Compile Include="Domain\CommandHandlers\CreatePushNotificationCommandHandler.cs" />
+    <Compile Include="Domain\CommandHandlers\SendPushNotificationCommandHandler.cs" />
+    <Compile Include="Domain\CommandHandlers\ValidatePushNotificationCommandHandler.cs" />
+    <Compile Include="Domain\Commands\CreatePushNotificationCommand.cs" />
+    <Compile Include="Domain\Commands\SendPushNotificationCommand.cs" />
+    <Compile Include="Domain\Commands\ValidatePushNotificationCommand.cs" />
+    <Compile Include="Domain\EventHandlers\UpdatePushNotificationEventHandler.cs" />
+    <Compile Include="Domain\Events\PushNotificationCreatedEvent.cs" />
+    <Compile Include="Domain\Events\PushNotificationInvalidatedEvent.cs" />
+    <Compile Include="Domain\Events\PushNotificationSucceededEvent.cs" />
+    <Compile Include="Domain\Events\PushNotificationUrlSetEvent.cs" />
+    <Compile Include="Domain\Events\PushNotificationValidatedEvent.cs" />
+    <Compile Include="Domain\Sagas\SendingPushNotificationSaga.cs" />
+    <Compile Include="Services\IPushNotificationDenormalizationService.cs" />
+    <Compile Include="Services\IPushNotificationService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Octo.Core\Octo.Core.csproj">
+      <Project>{8c6bc530-9d8e-42fe-99c7-f5d73a863e25}</Project>
+      <Name>Octo.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
