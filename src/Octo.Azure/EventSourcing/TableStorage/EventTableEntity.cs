@@ -1,6 +1,8 @@
 using System;
 using System.Globalization;
 
+using Microsoft.WindowsAzure.Storage.Table;
+
 using Octo.Core.Cqrs;
 
 namespace Octo.Azure.EventSourcing.TableStorage

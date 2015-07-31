@@ -2,6 +2,8 @@ using System;
 using System.IO;
 using System.Text;
 
+using Newtonsoft.Json;
+
 namespace Octo.Azure.EventSourcing.TableStorage
 {
     public static class Utility

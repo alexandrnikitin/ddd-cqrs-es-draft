@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+using Microsoft.WindowsAzure;
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Table;
+
 using Octo.Core.Cqrs;
 using Octo.Core.Cqrs.Common;
 using Octo.Core.EventSourcing;
@@ -36,11 +40,7 @@ namespace Octo.Azure.EventSourcing.TableStorage
 
             List<EventTableEntity> eventTableEntities;
             
-            var profiler = MiniProfiler.Current;
-            using (profiler.Step("AzureTableStorageEventStore.ExecuteQuery"))
-            {
-                eventTableEntities = _table.ExecuteQuery(query).ToList();
-            }
+            eventTableEntities = _table.ExecuteQuery(query).ToList();
 
             eventTableEntities = eventTableEntities.OrderBy(e => long.Parse(e.RowKey)).ToList();
 
@@ -60,11 +60,7 @@ namespace Octo.Azure.EventSourcing.TableStorage
             {
                 var eventTableEntity = new EventTableEntity(eventsToSave.Single());
                 var insertOperation = TableOperation.Insert(eventTableEntity);
-                var profiler = MiniProfiler.Current;
-                using (profiler.Step("AzureTableStorageEventStore.Execute"))
-                {
-                    _table.Execute(insertOperation);
-                }
+                _table.Execute(insertOperation);
             }
             else
             {
@@ -75,11 +71,7 @@ namespace Octo.Azure.EventSourcing.TableStorage
                     batchOperation.Insert(eventTableEntity);
                 }
 
-                var profiler = MiniProfiler.Current;
-                using (profiler.Step("AzureTableStorageEventStore.ExecuteBatch"))
-                {
-                    _table.ExecuteBatch(batchOperation);
-                }
+                _table.ExecuteBatch(batchOperation);
             }
         }
     }
