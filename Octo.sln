@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Octo.Core", "src\Octo.Core\Octo.Core.csproj", "{8C6BC530-9D8E-42FE-99C7-F5D73A863E25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Octo.Azure", "src\Octo.Azure\Octo.Azure.csproj", "{1F59A061-8B6B-4541-A57F-4AEC00E2630F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{8C6BC530-9D8E-42FE-99C7-F5D73A863E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C6BC530-9D8E-42FE-99C7-F5D73A863E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C6BC530-9D8E-42FE-99C7-F5D73A863E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F59A061-8B6B-4541-A57F-4AEC00E2630F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F59A061-8B6B-4541-A57F-4AEC00E2630F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F59A061-8B6B-4541-A57F-4AEC00E2630F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F59A061-8B6B-4541-A57F-4AEC00E2630F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
